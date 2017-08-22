@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import "../../../scss/constant";
+@import "../../../scss/mixin";
+
+.modal-box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  &:before{
+    content: '';
+    height: 100%;
+    display: inline-block;
+    width: 0;
+    vertical-align: middle;
+  }
+.dialog-box{
+  border-radius: .6rem;
+  background-color: #FAFAFA;
+  vertical-align: middle;
+  display: inline-block;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 9%;
+  //padding-top: 1.4rem;
+  position: relative;
+  .close-btn{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    @include bgp("../../../images/ico-close.png");
+  }
+  .txt-box{
+    padding: 1.5rem 2rem;
+    .dialog-title{
+      text-align: center;
+      font-size: $font-size-big;
+      margin-bottom: 1rem;
+    }
+    .dialog-txt{
+      text-align: center;
+      font-size: $font-size;
+    }
+  }
+  .btn-box{
+    //padding: .5rem 0;
+    text-align: center;
+    @include common-border-t;
+    a{
+      display: inline-block;
+      width: 48%;
+      height: 3.5rem;
+      line-height: 3.5rem;
+    }
+    a+a{
+      @include common-border-l;
+    }
+    .oneBtn{
+      width: 98%;
+    }
+   }
+}
+}

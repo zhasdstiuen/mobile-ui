@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+/*   公用背景样式设置    */
+@mixin bgp($url, $repeat:no-repeat, $position:center, $size:contain, $bgc:transparent) {
+	background-image:url($url);
+	background-repeat:$repeat;
+	background-position:$position;
+	background-size:$size;
+	background-color:$bgc;
+}
+/* 设置背景图片样式（此处不设置背景图） */
+@mixin bgp-no-img( $repeat:no-repeat, $position:center, $size:contain, $bgc:transparent) {
+	background-repeat:$repeat;
+	background-position:$position;
+	background-size:$size;
+	background-color:$bgc;
+}
+/*  1px边框  */
+@mixin common-border($border-color:#dfdfdf,$left:0){
+	height:1px;
+	position: absolute;
+	z-index: 1;
+	background:$border-color;
+	display: block;
+	width: 160%;
+	left: $left;
+	content: "";
+	overflow: hidden;
+	-webkit-transform: scale(.625, .625);
+	-moz-transform: scale(.625, .625);
+	-ms-transform: scale(.625, .625);
+	-o-transform: scale(.625, .625);
+	transform: scale(.625, .625);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+@mixin common-border-vertical($border-color:#dfdfdf){
+	height:160%;
+	position: absolute;
+	z-index: 1;
+	background:$border-color;
+	display: block;
+	width: 1px;
+	top: 0;
+	content: "";
+	overflow: hidden;
+	-webkit-transform: scale(.625, .625);
+	-moz-transform: scale(.625, .625);
+	-ms-transform: scale(.625, .625);
+	-o-transform: scale(.625, .625);
+	transform: scale(.625, .625);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+@mixin common-border-t{       /*   顶部边框    */
+	&{position:relative}
+	&:before {
+		top: 0;
+		@include common-border;
+	}
+}
+.common-border-t{@include common-border-t}
+
+@mixin common-border-b{      /*   底部边框    */
+	&{position:relative}
+	&:after {
+		bottom: 0;
+		@include common-border;
+	}
+}
+@mixin common-border-l{       /*   左边边框    */
+  &{position:relative}
+  &:before {
+    left: 0;
+    @include common-border-vertical;
+  }
+}

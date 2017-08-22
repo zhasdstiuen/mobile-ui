@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scalable=1,minimum-scalable=1,user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="../../styles/normal.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/common.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/dialog.css"/>
+
+    <script src="../../lib/zepto.min.js"></script>
+    <script src="../common/config.js"></script>
+    <script src="scripts/dialog.js"></script>
+    <title>dialog</title>
+    <style>
+        ul,li{list-style-type: none}
+        .demo-btn-list{
+            margin:10px;
+        }
+        .demo-btn-list li{
+            display: block;
+            margin:10px 0;
+            width:100%;
+            height:40px;
+            line-height: 40px;
+            background: #04BE02;
+            color: #fff;
+            text-align: center;
+            border-radius:5px;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="demo-btn-list">
+    <li onclick="showAlert()">alert对话框</li>
+    <li onclick="showConfirm()">确认对话框</li>
+    <li onclick="showNoBtn()">无按钮对话框</li>
+</ul>
+<script>
+
+
+    /**
+     * alert对话框配置
+     * @param closeBtn {boolean} 是否需要右上角的关闭按钮,默认true
+     * @param closeBtnCallback {function} 关闭按钮的回調,
+     * @param title {string} 標題的文本,默认为空
+     * @param txt {string} 内容的文本,默认为空
+     * @param btn {int} 按钮个数,默认为2
+     *             0  无按钮，
+     *             1  一个按钮，
+     *             2  两个按钮
+     * @param cancelTxt {string} 左下角取消按钮的文本,默认为“取消”
+     * @param cancelCallback {function} 取消按钮回调,默认为空
+     * @param confirmTxt {string} 确定按钮文本,默认为“确定”
+     * @param confirmCallback {function} 确定按钮回调,默认为空
+     **/
+    function showAlert(){
+        var params={
+            title:"这是一个标题",
+            txt:"这是内容内容内容内容内容",
+            btn:1,
+            cancelCallback:function () {
+                alert("sfas");
+            }
+        };
+        $("body").dialog(params);
+    }
+    /**
+     * alert对话框
+     */
+    function showConfirm(){
+        var params={
+            closeBtn:false,
+            title:"这是一个确认对话框",
+            txt:"这是内容内容内容内容内容",
+            btn:2,
+            cancelCallback:function () {
+                alert("sfas");
+            },
+            confirmCallback:function () {
+              alert("dfg");
+            }
+        };
+        $("body").dialog(params);
+    }
+    /*
+    * 无按钮弹框
+    * */
+    function showNoBtn() {
+        var params={
+            btn:0,
+            title:"这是一个标题",
+            txt:"这是内容内容内容内容内容"
+        };
+        $("body").dialog(params);
+    }
+</script>
+</body>
+</html>

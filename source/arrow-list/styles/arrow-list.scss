@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../../../scss/constant";
+@import "../../../scss/mixin";
+
+.arrow-list-box{
+  width: 100%;
+  padding-left:1rem ;
+  @include common-border-t;
+  @include common-border-b;
+  li{
+    line-height: 4rem;
+    font-size: $font-size-big;
+    position: relative;
+    &:after{
+      content: '';
+      display:inline-block;
+      position: absolute;
+      right: 3rem;
+      top: 1.3rem;
+      width: .667rem;
+      height: 1.333rem;
+      @include bgp("../../../images/next.png");
+    }
+  }
+  li+li{
+    &:before{
+      @include common-border();
+    }
+  }
+}

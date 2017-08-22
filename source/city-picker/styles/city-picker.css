@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*   公用背景样式设置    */
+/* 设置背景图片样式（此处不设置背景图） */
+/*  1px边框  */
+.common-border-t {
+  /*   顶部边框    */ }
+  .common-border-t {
+    position: relative; }
+  .common-border-t:before {
+    top: 0;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    background: #dfdfdf;
+    display: block;
+    width: 160%;
+    left: 0;
+    content: "";
+    overflow: hidden;
+    -webkit-transform: scale(0.625, 0.625);
+    -moz-transform: scale(0.625, 0.625);
+    -ms-transform: scale(0.625, 0.625);
+    -o-transform: scale(0.625, 0.625);
+    transform: scale(0.625, 0.625);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+.city-picker-box {
+  min-height: 100%;
+  background: #efefef; }
+  .city-picker-box dl {
+    /*   底部边框    */
+    background: #fff;
+    line-height: 3.2rem;
+    box-sizing: border-box; }
+    .city-picker-box dl {
+      position: relative; }
+    .city-picker-box dl:after {
+      bottom: 0;
+      height: 1px;
+      position: absolute;
+      z-index: 1;
+      background: #dfdfdf;
+      display: block;
+      width: 160%;
+      left: 0;
+      content: "";
+      overflow: hidden;
+      -webkit-transform: scale(0.625, 0.625);
+      -moz-transform: scale(0.625, 0.625);
+      -ms-transform: scale(0.625, 0.625);
+      -o-transform: scale(0.625, 0.625);
+      transform: scale(0.625, 0.625);
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      transform-origin: 0 0; }
+    .city-picker-box dl dd {
+      /*   底部边框    */
+      background: #efefef;
+      padding-left: 1rem;
+      box-sizing: border-box;
+      color: #9a9a9a; }
+      .city-picker-box dl dd {
+        position: relative; }
+      .city-picker-box dl dd:after {
+        bottom: 0;
+        height: 1px;
+        position: absolute;
+        z-index: 1;
+        background: #dfdfdf;
+        display: block;
+        width: 160%;
+        left: 0;
+        content: "";
+        overflow: hidden;
+        -webkit-transform: scale(0.625, 0.625);
+        -moz-transform: scale(0.625, 0.625);
+        -ms-transform: scale(0.625, 0.625);
+        -o-transform: scale(0.625, 0.625);
+        transform: scale(0.625, 0.625);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0; }
+    .city-picker-box dl dt {
+      margin-left: 1rem;
+      color: #696969;
+      /*   底部边框    */ }
+      .city-picker-box dl dt {
+        position: relative; }
+      .city-picker-box dl dt:after {
+        bottom: 0;
+        height: 1px;
+        position: absolute;
+        z-index: 1;
+        background: #dfdfdf;
+        display: block;
+        width: 160%;
+        left: 0;
+        content: "";
+        overflow: hidden;
+        -webkit-transform: scale(0.625, 0.625);
+        -moz-transform: scale(0.625, 0.625);
+        -ms-transform: scale(0.625, 0.625);
+        -o-transform: scale(0.625, 0.625);
+        transform: scale(0.625, 0.625);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0; }
+    .hot-city dl {
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 3.5rem;
+      box-sizing: border-box; }
+      .hot-city dl dd {
+        margin-bottom: 1rem;
+        margin-left: -1rem;
+        margin-right: -3.5rem; }
+      .hot-city dl dt {
+        display: block;
+        width: 31%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 3.5%;
+        margin-bottom: 1rem;
+        padding: 0 .3rem;
+        background: #fff;
+        border: .05rem solid #dfdfdf;
+        box-sizing: border-box;
+        border-radius: .3rem;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+        .hot-city dl dt:nth-child(3n+1) {
+          margin-right: 0; }
+        .hot-city dl dt:after {
+          height: 0 !important;
+          width: 0 !important; }
+
+.city-picker-index {
+  position: fixed;
+  z-index: 5;
+  top: 15%;
+  right: 0;
+  height: 70%;
+  width: 2.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical; }
+  .city-picker-index li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    font-size: 1rem; }
+    .city-picker-index li a {
+      color: #2FD0E6; }
+
+/*# sourceMappingURL=city-picker.css.map */

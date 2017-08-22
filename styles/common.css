@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*   公用背景样式设置    */
+/* 设置背景图片样式（此处不设置背景图） */
+/*  1px边框  */
+.common-border-t {
+  /*   顶部边框    */ }
+  .common-border-t {
+    position: relative; }
+  .common-border-t:before {
+    top: 0;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    background: #dfdfdf;
+    display: block;
+    width: 160%;
+    left: 0;
+    content: "";
+    overflow: hidden;
+    -webkit-transform: scale(0.625, 0.625);
+    -moz-transform: scale(0.625, 0.625);
+    -ms-transform: scale(0.625, 0.625);
+    -o-transform: scale(0.625, 0.625);
+    transform: scale(0.625, 0.625);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+/* 横向列表 */
+/*
+.column-list-3{
+	dt,li,ol{
+		width:30%;
+		display: inline-block;
+		margin-left:0!important;
+		margin-right:3.3333%;
+		margin-bottom:1rem;
+
+		&:nth-child(3n+1){
+			margin-right: 0;
+		}
+
+		background:#efefef;
+		text-align: center;
+	}
+}*/
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*   公用背景样式设置    */
+/* 设置背景图片样式（此处不设置背景图） */
+/*  1px边框  */
+.common-border-t {
+  /*   顶部边框    */ }
+  .common-border-t {
+    position: relative; }
+  .common-border-t:before {
+    top: 0;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    background: #dfdfdf;
+    display: block;
+    width: 160%;
+    left: 0;
+    content: "";
+    overflow: hidden;
+    -webkit-transform: scale(0.625, 0.625);
+    -moz-transform: scale(0.625, 0.625);
+    -ms-transform: scale(0.625, 0.625);
+    -o-transform: scale(0.625, 0.625);
+    transform: scale(0.625, 0.625);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+.loading-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .loading-wrap:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .loading-wrap .loading-box {
+    vertical-align: middle;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    display: inline-block;
+    padding: .8rem; }
+    .loading-wrap .loading-box img {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: .5rem; }
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+    .loading-wrap .loading-box .Rotation {
+      -webkit-transform: rotate(360deg);
+      animation: rotation 1s linear infinite;
+      -moz-animation: rotation 1s linear infinite;
+      -webkit-animation: rotation 1s linear infinite;
+      -o-animation: rotation 1s linear infinite; }
+
+/*# sourceMappingURL=loading.css.map */

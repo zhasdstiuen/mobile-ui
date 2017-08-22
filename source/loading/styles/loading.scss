@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "../../../scss/constant";
+@import "../../../scss/mixin";
+
+.loading-wrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  &:after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .loading-box{
+    vertical-align: middle;
+    text-align: center;
+    background-color: #000;
+    color:white;
+    font-size: $font-size-big;
+    border-radius: .5rem;
+    display: inline-block;
+    padding: .8rem;
+    img{
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: .5rem;
+    }
+    @-webkit-keyframes rotation{
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+    }
+    .Rotation{
+      -webkit-transform: rotate(360deg);
+      animation: rotation 1s linear infinite;
+      -moz-animation: rotation 1s linear infinite;
+      -webkit-animation: rotation 1s linear infinite;
+      -o-animation: rotation 1s linear infinite;
+    }
+  }
+}

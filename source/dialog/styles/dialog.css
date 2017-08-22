@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/*   公用背景样式设置    */
+/* 设置背景图片样式（此处不设置背景图） */
+/*  1px边框  */
+.common-border-t {
+  /*   顶部边框    */ }
+  .common-border-t {
+    position: relative; }
+  .common-border-t:before {
+    top: 0;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    background: #dfdfdf;
+    display: block;
+    width: 160%;
+    left: 0;
+    content: "";
+    overflow: hidden;
+    -webkit-transform: scale(0.625, 0.625);
+    -moz-transform: scale(0.625, 0.625);
+    -ms-transform: scale(0.625, 0.625);
+    -o-transform: scale(0.625, 0.625);
+    transform: scale(0.625, 0.625);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0; }
+
+.modal-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .modal-box:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    width: 0;
+    vertical-align: middle; }
+  .modal-box .dialog-box {
+    border-radius: .6rem;
+    background-color: #FAFAFA;
+    vertical-align: middle;
+    display: inline-block;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 9%;
+    position: relative; }
+    .modal-box .dialog-box .close-btn {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: .5rem;
+      right: .5rem;
+      background-image: url("../../../images/ico-close.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: transparent; }
+    .modal-box .dialog-box .txt-box {
+      padding: 1.5rem 2rem; }
+      .modal-box .dialog-box .txt-box .dialog-title {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem; }
+      .modal-box .dialog-box .txt-box .dialog-txt {
+        text-align: center;
+        font-size: 1.2rem; }
+    .modal-box .dialog-box .btn-box {
+      text-align: center;
+      /*   顶部边框    */ }
+      .modal-box .dialog-box .btn-box {
+        position: relative; }
+      .modal-box .dialog-box .btn-box:before {
+        top: 0;
+        height: 1px;
+        position: absolute;
+        z-index: 1;
+        background: #dfdfdf;
+        display: block;
+        width: 160%;
+        left: 0;
+        content: "";
+        overflow: hidden;
+        -webkit-transform: scale(0.625, 0.625);
+        -moz-transform: scale(0.625, 0.625);
+        -ms-transform: scale(0.625, 0.625);
+        -o-transform: scale(0.625, 0.625);
+        transform: scale(0.625, 0.625);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0; }
+      .modal-box .dialog-box .btn-box a {
+        display: inline-block;
+        width: 48%;
+        height: 3.5rem;
+        line-height: 3.5rem; }
+      .modal-box .dialog-box .btn-box a + a {
+        /*   左边边框    */ }
+        .modal-box .dialog-box .btn-box a + a {
+          position: relative; }
+        .modal-box .dialog-box .btn-box a + a:before {
+          left: 0;
+          height: 160%;
+          position: absolute;
+          z-index: 1;
+          background: #dfdfdf;
+          display: block;
+          width: 1px;
+          top: 0;
+          content: "";
+          overflow: hidden;
+          -webkit-transform: scale(0.625, 0.625);
+          -moz-transform: scale(0.625, 0.625);
+          -ms-transform: scale(0.625, 0.625);
+          -o-transform: scale(0.625, 0.625);
+          transform: scale(0.625, 0.625);
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
+          -o-transform-origin: 0 0;
+          transform-origin: 0 0; }
+      .modal-box .dialog-box .btn-box .oneBtn {
+        width: 98%; }
+
+/*# sourceMappingURL=dialog.css.map */

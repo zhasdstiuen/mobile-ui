@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import "../scss/constant";
+@import "../scss/mixin";
+
+/* 横向列表 */
+@mixin column-list($mb:.5rem){
+	dt,li,ol{
+		display: inline-block;
+		margin-bottom:$mb;
+	}
+}
+/*
+.column-list-3{
+	dt,li,ol{
+		width:30%;
+		display: inline-block;
+		margin-left:0!important;
+		margin-right:3.3333%;
+		margin-bottom:1rem;
+
+		&:nth-child(3n+1){
+			margin-right: 0;
+		}
+
+		background:#efefef;
+		text-align: center;
+	}
+}*/

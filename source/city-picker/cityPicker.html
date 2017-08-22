@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scalable=1,minimum-scalable=1,user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="../../styles/normal.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/common.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/city-picker.css"/>
+
+    <script src="../../lib/zepto.min.js"></script>
+    <script src="../common/config.js"></script>
+    <script src="scripts/cityData.js"></script>
+    <script src="scripts/cityPicker.js"></script>
+    <title>城市选择器</title>
+</head>
+<body>
+
+    <div id="city-picker-box" class="city-picker-box">
+        <!--<div id="current-city" class="current-city"></div>-->
+        <div id="hot-city" class="hot-city clearfix"></div>
+        <div id="all-city" class="all-city"></div>
+    </div>
+
+<script>
+    $(function(){
+        $("#city-picker-box").cityPicker(function(id, name){
+            alert(id+":"+name);
+        });
+    });
+</script>
+</body>
+</html>

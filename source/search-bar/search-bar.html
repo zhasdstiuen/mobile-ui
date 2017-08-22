@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scalable=1,minimum-scalable=1,user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="../../styles/normal.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/common.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/search-bar.css"/>
+
+    <script src="../../lib/zepto.min.js"></script>
+    <script src="../common/config.js"></script>
+    <title>search-bar</title>
+</head>
+<body>
+<div class="barBox">
+    <div class="searchbar">
+        <div class="search-input">
+                <label class="icon icon-search" for="search"></label>
+                <input type="search"  id='search' placeholder='输入关键字...'/>
+        </div>
+        <!--<i class="clearTxt"></i>-->
+    </div>
+    <a class="searchBtn">搜索</a>
+</div>
+<script>
+    $(function () {
+        $(".searchBtn").click(function () {
+            alert("sdfdsf");
+        });
+    })
+</script>
+</body>
+</html>

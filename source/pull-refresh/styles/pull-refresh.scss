@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../../../scss/constant";
+@import "../../../scss/mixin";
+
+.pull-refresh{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform:translate(0,-3rem);
+  #slideDown{
+    //height: 3rem;
+    line-height: 1.5rem;
+    font-size: $font-size;
+  }
+  .scroll-content{
+    width: 100%;
+    background-color: #ffffff;
+  }
+}
